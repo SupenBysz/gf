@@ -34,6 +34,7 @@ func (c cVersion) Index(ctx context.Context, in cVersionInput) (*cVersionOutput,
 	if info.Git == "" {
 		info.Git = "none"
 	}
+	mlog.Printf(`Author of GoFrame tools extender: SupenBysz`)
 	mlog.Printf(`GoFrame CLI Tool %s, https://goframe.org`, gf.VERSION)
 	gfVersion, err := c.getGFVersionOfCurrentProject()
 	if err != nil {
